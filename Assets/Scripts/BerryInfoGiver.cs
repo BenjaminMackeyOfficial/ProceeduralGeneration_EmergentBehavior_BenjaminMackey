@@ -1,10 +1,4 @@
 using UnityEngine;
-
-public class Berry
-{
-    public GameObject obj;
-    public GameObject currentOwner;
-}
 public class BerryInfoGiver : MonoBehaviour
 {
     private Berry[] berries;
@@ -14,11 +8,11 @@ public class BerryInfoGiver : MonoBehaviour
         
     }
 
-    private Berry RequestClosesBerry()
+    public static Berry RequestClosesBerry()
     {
         return new Berry();
     }
-    private Berry RequestSafeBerry()
+    public static Berry RequestSafeBerry()
     {
         
         return new Berry();

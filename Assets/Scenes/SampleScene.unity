@@ -174,7 +174,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c49dddfaf8911e4e8939f9d74d92b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  entityName: 
+  agression: 0
+  speed: 0
+  hitPower: 0
+  hitSpeed: 0
+  throwPower: 0
+  patience: 0
   score: 0
+  currentAngerLevel: 0
+  desperation: 0
+  currentBerryTarget: {fileID: 0}
+  playerTarget: {fileID: 0}
   emotionalState: 0
   descisionState: 0
   state: 0
@@ -623,6 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 678080703}
+  - component: {fileID: 678080704}
   m_Layer: 0
   m_Name: BerryPickup
   m_TagString: Untagged
@@ -646,6 +658,19 @@ Transform:
   - {fileID: 1779652636}
   m_Father: {fileID: 2092085211}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678080704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678080702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d89a721071fec74f96e294ce5469c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Berry
+  currentOwner: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
